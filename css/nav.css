@@ -1,0 +1,119 @@
+nav{
+
+    background: none;
+    border-bottom: 1px solid white;
+    width: 80vw;
+    box-shadow: none;
+    margin-top: 3vh;
+    margin-left: 10vw;
+}
+nav ul{
+    float: right;
+    margin-top: 25px;
+    font-weight: lighter;
+    margin-right: 7vw;
+}
+.nav-wrapper a{
+    font-size: 1.4rem;
+}
+
+.center-text-top{
+    position: absolute;
+    left: 20vw;
+    top: 27vh;
+}
+
+.t1{
+    font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    right: 0vw;
+    top: -12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.t2{
+    font-size: 4.6rem;
+    text-transform: uppercase;
+    font-family: var(--heading_font);
+    font-weight: bold;
+}
+.t3{
+    font-size: 3.75rem;
+    display: block;
+    position: absolute;
+    top: 68px;
+    left: 15px;
+    font-family: var(--heading_font);
+    font-weight: lighter;
+}
+form{
+    display: none;
+    width: 22vw;
+    height: auto;
+    position: absolute;
+    right: 10vw;
+    top: 46vh;
+}
+
+input[type=text]:not(.browser-default){
+    background: white;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--main_color);
+}
+button{
+    width: 100%;
+    background: var(--main_color);
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #F1F0EB;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 288px;
+    height: 176px;
+    background-size: cover;
+    position: relative;
+    animation: loader 2s infinite ease;
+}
+@keyframes loader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    95% { height: 100%;}
+    100% { height: 0%;}
+}
+@media only screen and (min-width: 1100px) {
+    form{
+        display: block;
+    }
+    .center-text-top {
+        left: 32vw;
+    }
+}
